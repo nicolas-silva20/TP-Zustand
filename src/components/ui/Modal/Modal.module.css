@@ -1,0 +1,154 @@
+.containerPrincipalModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    backdrop-filter: brightness(60%) blur(8px);
+    z-index: 100;
+    animation: fadeIn 0.4s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.contentPopUp {
+    background-color: #fff;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    width: 90%;
+    max-width: 550px;
+    min-width: 320px;
+    padding: 2rem;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    align-items: center;
+    justify-content: space-around;
+    animation: slideUp 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    overflow: hidden;
+    max-height: 90vh;
+    overflow-y: auto;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.modalHeader {
+    width: 100%;
+    text-align: center;
+    color: #4a6fa5;
+}
+
+.modalHeader h3 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.formContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 1.2rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.formContent input, 
+.formContent textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 10px;
+    border: 2px solid #e2e8f0;
+    resize: none;
+    margin: 0.5rem 0;
+    font-family: inherit;
+    transition: all 0.25s ease;
+    box-sizing: border-box;
+    font-size: 0.95rem;
+}
+
+.formContent input:focus,
+.formContent textarea:focus {
+    outline: none;
+    border-color: #4a6fa5;
+    box-shadow: 0 0 0 3px rgba(74, 111, 165, 0.2);
+}
+
+.formContent textarea {
+    min-height: 120px;
+}
+
+.buttonCards {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 0.8rem;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+}
+
+.cancelButton, .actionButton {
+    border: none;
+    padding: 0.9rem 1.8rem;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    min-width: 130px;
+    margin: 0.25rem;
+}
+
+.cancelButton {
+    background-color: #e2e8f0;
+    color: #2d3748;
+}
+
+.cancelButton:hover {
+    background-color: #cbd5e0;
+}
+
+.actionButton {
+    background-color: #4a6fa5;
+    color: white;
+}
+
+.actionButton:hover {
+    background-color: #395882;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(74, 111, 165, 0.3);
+}
+
+/* Ajustes para dispositivos móviles */
+@media screen and (max-width: 600px) {
+    .contentPopUp {
+        width: 95%;
+        padding: 1.5rem;
+    }
+    
+    .formContent input, 
+    .formContent textarea {
+        padding: 0.8rem;
+    }
+    
+    .cancelButton, .actionButton {
+        flex: 1;
+        padding: 0.8rem 1.2rem;
+        min-width: unset;
+    }
+}

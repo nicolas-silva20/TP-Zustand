@@ -1,0 +1,75 @@
+.containerPrincipalListTareas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #f7fafc;
+    min-height: calc(100vh - 70px);
+}
+
+.containerTitleAndButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75%;
+    max-width: 1000px;
+}
+
+.titleListTareas {
+    color: #2d3748;
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+.addButton {
+    background-color: #4a6fa5;
+    border: none;
+    padding: 0.9rem 1.8rem;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    box-shadow: 0 3px 10px rgba(74, 111, 165, 0.2);
+}
+
+.addButton:hover {
+    background-color: #395882;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(74, 111, 165, 0.25);
+}
+
+.containerList {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 2rem;
+    width: 75%;
+    max-width: 1000px;
+    background-color: #fff;
+    min-height: 65vh;
+    max-height: 65vh;
+    overflow-y: auto;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.05);
+}
+
+.emptyState {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 250px;
+    width: 100%;
+    color: #a0aec0;
+}
+
+.emptyState h3 {
+    font-weight: 500;
+    margin: 15px 0;
+    font-size: 1.2rem;
+}

@@ -1,0 +1,28 @@
+{
+  "tareas": [
+    {
+      "id": "1",
+      "titulo": "Completar informe mensual",
+      "descripcion": "Elaborar el informe de avance del proyecto con estadísticas actualizadas",
+      "fechaLimite": "2025-06-15"
+    },
+    {
+      "id": "2",
+      "titulo": "Reunión con clientes",
+      "descripcion": "Preparar presentación y materiales para la reunión trimestral",
+      "fechaLimite": "2025-05-28"
+    },
+    {
+      "id": "172ae440-34e7-49eb-a821-b5ae033b065b",
+      "titulo": "Actualizar documentación",
+      "descripcion": "Revisar y actualizar la documentación técnica del sistema",
+      "fechaLimite": "2025-07-10"
+    },
+    {
+      "id": "3f8c9d2a-6b5e-4a1c-9d8f-7e6b5c4d3a2b",
+      "titulo": "Optimizar rendimiento",
+      "descripcion": "Identificar y corregir cuellos de botella en la aplicación",
+      "fechaLimite": "2025-06-05"
+    }
+  ]
+}

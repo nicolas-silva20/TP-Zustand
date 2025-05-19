@@ -1,0 +1,83 @@
+.containerCardList {
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+    border-left: 5px solid #4a6fa5;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    margin-bottom: 12px;
+}
+
+.containerCardList:hover {
+    transform: translateX(5px);
+    box-shadow: 0 5px 15px rgba(74, 111, 165, 0.15);
+}
+
+.cardInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.cardTitle {
+    font-size: 1.3rem;
+    color: #2d3748;
+    margin: 0 0 0.4rem 0;
+    font-weight: 600;
+}
+
+.cardDescription {
+    color: #4a5568;
+    margin: 0 0 0.6rem 0;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.cardDate {
+    color: #4a6fa5;
+    font-size: 0.85rem;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
+
+.actionCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.8rem;
+}
+
+.editButton, .deleteButton {
+    border: none;
+    padding: 0.6rem 1.2rem;
+    border-radius: 6px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    font-size: 0.9rem;
+}
+
+.editButton {
+    background-color: #4a6fa5;
+    color: white;
+}
+
+.editButton:hover {
+    background-color: #395882;
+    box-shadow: 0 2px 8px rgba(74, 111, 165, 0.3);
+}
+
+.deleteButton {
+    background-color: #e2e8f0;
+    color: #2d3748;
+}
+
+.deleteButton:hover {
+    background-color: #cbd5e0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
